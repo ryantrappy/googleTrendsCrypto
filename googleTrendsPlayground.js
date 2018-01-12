@@ -7,7 +7,7 @@ var yesterday = new Date(new Date().getTime() - ((6*24) * 60 * 60 * 1000));
 // Get the coins
 var getCoins = function() {
 
-    var url = 'https://api.coinmarketcap.com/v1/ticker/';
+    var url = 'https://api.coinmarketcap.com/v1/ticker/?limit=0';
     request(url, function(error, response, body){
 
 
@@ -56,7 +56,7 @@ var getCoins = function() {
             (function(e){
                 setTimeout(function() {
                     processCoin(parsedBody, e)
-                }, 500*j)
+                }, 1000*j)
             })(j)
 
         }
@@ -70,8 +70,8 @@ var isDataSignificant = function(data, coin){
   //Takes in array of data objects and figures out if the data is significant based on rules programmed here
   var ratioOfLastTwoDays = data[data.length-1].value[0]/data[data.length-2].value[0];
   // console.log("the ratio was " + ratioOfLastTwoDays);
-    if(ratioOfLastTwoDays > 1.20){
-      console.log("data was significant for " + coin);
+    if(ratioOfLastTwoDays > 1.50 && isFinite(ratioOfLastTwoDays)){
+      console.log("data was significant for " + coin + " at a ratio of " + ratioOfLastTwoDays);
   }
 };
 
