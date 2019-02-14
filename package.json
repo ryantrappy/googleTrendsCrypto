@@ -1,0 +1,25 @@
+{
+  "name": "googletrendscrypto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "googleTrendsPlayground.js",
+  "dependencies": {
+    "google-trends-api": "^4.3.0",
+    "request": "^2.83.0",
+    "require.js": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryantrappy/googleTrendsCrypto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryantrappy/googleTrendsCrypto/issues"
+  },
+  "homepage": "https://github.com/ryantrappy/googleTrendsCrypto#readme"
+}
