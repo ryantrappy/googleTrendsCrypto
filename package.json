@@ -4,8 +4,8 @@
   "description": "",
   "main": "googleTrendsPlayground.js",
   "dependencies": {
-    "google-trends-api": "^4.3.0",
-    "request": "^2.83.0",
+    "google-trends-api": "^4.9.0",
+    "request": "^2.88.0",
     "require.js": "^1.0.0"
   },
   "devDependencies": {},
